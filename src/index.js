@@ -140,7 +140,7 @@ class GasStation {
     let _letters = [];
     let result = {
       word,
-      wide: cangjie[''],
+      wide: cangjie['water'],
       web: []
     };
     
@@ -156,19 +156,19 @@ class GasStation {
     if (n.length >= 2) {
       switch(n[1]) {
         case 'value':
-          result.wide = cangjie[''];
+          result.wide = cangjie['corpse'];
           break;
 
         case 'function':
-          result.wide = cangjie[''];
+          result.wide = cangjie['mouth'];
           break;
 
         case 'behavior':
-          result.wide = cangjie[''];
+          result.wide = cangjie['field'];
           break;
 
         case 'result':
-          result.wide = cangjie[''];
+          result.wide = cangjie['hand'];
           break;
       }
     }
