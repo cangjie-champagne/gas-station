@@ -1,11 +1,11 @@
 const { Command } = require('commander');
 const { name, version } = require('./package.json');
-const { PepperSpray } = require('./src/index');
+const { GasStation } = require('./src/index');
 const program = new Command();
 
 program
   .name(name)
-  .description('A chinese peeper-spray method for common words on the alphabet.')
+  .description('Bo keyword cangjie keyboard translator')
   .version(version);
 
 program.command('parse')
@@ -13,7 +13,7 @@ program.command('parse')
   .argument('<string>', 'string to parse')
   .option('-d, --debug', 'debug')
   .action((s, { debug }) => {
-    const p = new PepperSpray(s, debug);
+    const p = new GasStation(s, debug);
 
     console.log(p.result);
   });
